@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/iv_ss"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/sseurisko"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_ss"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35dp"
+        android:text="@string/e_mail_address"
+        android:textSize="@dimen/TextSize" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="35dp"
+        android:text="@string/password"
+        android:textSize="@dimen/TextSize"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_ss"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/tv_email"
+        android:hint="@string/enter_your_email_here"
+        android:textSize="@dimen/TextSize"
+        android:inputType="textEmailAddress"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/tv_email"
+        android:hint="@string/enter_your_password_here"
+        android:textSize="@dimen/TextSize"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+
+        app:cornerRadius="10dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp">
+        <TextView
+            android:id="@+id/txt_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signuptxt" />
+
+        <TextView
+            android:id="@+id/link_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/signuplink"
+            android:focusable="true"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

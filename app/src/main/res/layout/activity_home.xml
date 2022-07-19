@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/welcome_to_the_home_page"
+        android:textSize="@dimen/SSTextSize" />
+
+    <Button
+        android:id="@+id/btn_news"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="@string/news"
+        android:textAllCaps="false"
+        android:textSize="@dimen/TextSize" />
+
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/btn_news"
+        android:textSize="@dimen/TextSize"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/btn_more"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:textSize="@dimen/TextSize" />
+
+
+</RelativeLayout>
